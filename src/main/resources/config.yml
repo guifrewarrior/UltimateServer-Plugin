@@ -1,0 +1,20 @@
+database:
+  url: "your-supabase-url"
+  api-key: "your-api-key"
+  anon-key: "your-anon-key"
+
+optimization:
+  enabled: true
+  check-interval: 20
+
+economy:
+  enabled: true
+  starting-balance: 1000.0
+
+protection:
+  enabled: true
+  max-claim-size: 10000
+
+moderation:
+  enabled: true
+  mute-duration: 3600

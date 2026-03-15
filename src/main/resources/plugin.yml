@@ -1,0 +1,48 @@
+name: UltimateServer
+version: 1.0.0
+description: High-performance server plugin with optimization and advanced features
+author: UltimateServer Team
+main: com.ultimateserver.UltimateServerPlugin
+
+commands:
+  ultimateserver:
+    description: Main plugin command
+    aliases: [us, ultimate]
+    usage: /ultimateserver <command>
+  admin:
+    description: Admin tools
+    aliases: [adm]
+    usage: /admin <command>
+  economy:
+    description: Economy management
+    aliases: [money, balance]
+    usage: /economy <command>
+  protect:
+    description: World protection
+    aliases: [region, claim]
+    usage: /protect <command>
+  moderation:
+    description: Moderation tools
+    aliases: [mod, mute]
+    usage: /moderation <command>
+
+permissions:
+  ultimateserver.*:
+    description: All UltimateServer permissions
+    children:
+      ultimateserver.admin: true
+      ultimateserver.economy: true
+      ultimateserver.protection: true
+      ultimateserver.moderation: true
+  ultimateserver.admin:
+    description: Admin permissions
+    default: op
+  ultimateserver.economy:
+    description: Economy permissions
+    default: true
+  ultimateserver.protection:
+    description: Protection permissions
+    default: true
+  ultimateserver.moderation:
+    description: Moderation permissions
+    default: op
