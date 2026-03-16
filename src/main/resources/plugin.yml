@@ -25,6 +25,10 @@ commands:
     description: Moderation tools
     aliases: [mod, mute]
     usage: /moderation <command>
+  player:
+    description: Player management
+    aliases: [p]
+    usage: /player <command>
 
 permissions:
   ultimateserver.*:
@@ -46,3 +50,6 @@ permissions:
   ultimateserver.moderation:
     description: Moderation permissions
     default: op
+  ultimateserver.player:
+    description: Player permissions
+    default: true

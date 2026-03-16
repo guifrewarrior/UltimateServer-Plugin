@@ -12,6 +12,7 @@ import com.ultimateserver.command.AdminCommandExecutor;
 import com.ultimateserver.command.EconomyCommandExecutor;
 import com.ultimateserver.command.ProtectionCommandExecutor;
 import com.ultimateserver.command.ModerationCommandExecutor;
+import com.ultimateserver.command.PlayerCommandExecutor;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -92,6 +93,7 @@ public class UltimateServerPlugin extends JavaPlugin {
         getCommand("economy").setExecutor(new EconomyCommandExecutor(this));
         getCommand("protect").setExecutor(new ProtectionCommandExecutor(this));
         getCommand("moderation").setExecutor(new ModerationCommandExecutor(this));
+        getCommand("player").setExecutor(new PlayerCommandExecutor(this));
     }
 
     public static UltimateServerPlugin getInstance() {
